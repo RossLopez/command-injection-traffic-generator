@@ -273,7 +273,7 @@ samples = 100000
 
 syn_data = gen_syn_data(samples)
 
-with open("syn_web_traffic.csv", "w", newline="") as csvfile:
+with open("synthetic_web_traffic.csv", "w", newline="") as csvfile:
     fieldnames = ["timestamp", "url", "method", "query", "label"]
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
